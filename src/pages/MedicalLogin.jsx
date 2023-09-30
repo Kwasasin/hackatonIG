@@ -1,6 +1,7 @@
 import "./medical-login.css";
 import { Form, Button, Container, Row, Col } from "react-bootstrap";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 const MedicalLoginForm = () => {
   const [pesel, setPesel] = useState("");
@@ -48,6 +49,17 @@ const MedicalLoginForm = () => {
                   value={pesel}
                   onChange={(e) => setPesel(e.target.value)}
                 />
+                <Form.Label className="fw-bold">Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+
+                <Button className="mb-4" as={Link} to="/patient-dashboard">
+                  <span>SIGN IN</span>
+                </Button>
               </Form.Group>
             ) : (
               <Form.Group className="mb-3">
@@ -58,20 +70,19 @@ const MedicalLoginForm = () => {
                   value={doctorNumber}
                   onChange={(e) => setDoctorNumber(e.target.value)}
                 />
+                <Form.Label className="fw-bold">Password</Form.Label>
+                <Form.Control
+                  type="password"
+                  placeholder="Password"
+                  value={password}
+                  onChange={(e) => setPassword(e.target.value)}
+                />
+
+                <Button className="mb-4" as={Link} to="/doctor-dashboard">
+                  <span>SIGN IN</span>
+                </Button>
               </Form.Group>
             )}
-            <Form.Group className="mb-3">
-              <Form.Label className="fw-bold">Password</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-              />
-            </Form.Group>
-            <Button className="login-80p mb-4 fw-bold" type="submit">
-              SIGN IN
-            </Button>
           </Form>
         </Col>
       </Row>
