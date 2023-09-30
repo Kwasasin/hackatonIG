@@ -12,8 +12,6 @@ function App() {
     <BrowserRouter>
       <div className="App">
         <Routes>
-          {/*<span>TEST</span>*/}
-            <Route path='/two-buttons' element={<TwoButtonsPage />} />
             <Route path='/patient-dashboard' element={<PatientDashboardPage />} />
           <Route path="/" element={<MedicalLoginForm />} />
         </Routes>
