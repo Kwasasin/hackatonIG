@@ -1,5 +1,8 @@
+
 body {
-    background-color: #9400D3!important;
+    background-image:  url("./some4kImage.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;

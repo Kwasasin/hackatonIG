@@ -1,0 +1,21 @@
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.grid-item {
+    border: 5px solid #ddd;
+    padding: 20px;
+    text-align: center;
+    width: 1000px;
+}
+
+.niceHeader {
+    background-color: #F0FFFF;
+    -webkit-box-shadow: 4px 3px 100px 22px rgba(8, 2, 3, 0.68);
+    -moz-box-shadow: 4px 3px 100px 22px rgba(8, 2, 3, 0.68);
+    box-shadow: 4px 3px 100px 22px rgba(8, 2, 3, 0.68);
+}
