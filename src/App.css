@@ -2,6 +2,16 @@
   text-align: center;
 }
 
+:root {
+  --main-color: #2f64b9;
+  --sec-color: #d10202;
+  --backg-color: #fef7ec;
+}
+
+img {
+  object-fit: cover;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
