@@ -6,13 +6,15 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import PatientDashboardPage from "./pages/PatientDashboardPage";
 import "bootstrap/dist/css/bootstrap.min.css";
 import MedicalLoginForm from "./pages/MedicalLogin";
+import DoctorDashboard from "./pages/DoctorDashboardPage";
 
 function App() {
   return (
     <BrowserRouter>
       <div className="App">
         <Routes>
-            <Route path='/patient-dashboard' element={<PatientDashboardPage />} />
+            <Route path='/patient-dashboard' element={<PatientDashboardPage/>}/>
+            <Route path='/doctor-dashboard' element={<DoctorDashboard/>}/>
           <Route path="/" element={<MedicalLoginForm />} />
         </Routes>
       </div>
