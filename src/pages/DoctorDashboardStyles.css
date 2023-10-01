@@ -1,6 +1,7 @@
 /* Style the search container */
 .search-container {
     display: flex;
+    align-self: center;
     align-items: center;
     background-color: #f2f2f2;
     padding: 10px;
@@ -30,3 +31,11 @@
 .search-button:hover {
     background-color: #0056b3;
 }
+.searchContainer1{
+    width: 500px;
+    align-content: center;
+    align-self: center;
+    padding-left: 150px;
+    margin-bottom: 50px;
+}
+
