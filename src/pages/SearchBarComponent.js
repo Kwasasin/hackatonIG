@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Form, Button } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 const SearchBarComponent = ({ onSearch }) => {
   const [pesel, setPesel] = useState("");
@@ -16,7 +17,12 @@ const SearchBarComponent = ({ onSearch }) => {
         value={pesel}
         onChange={(e) => setPesel(e.target.value)}
       />
-      <Button onClick={handleSearch} variant="primary">
+      <Button
+        onClick={handleSearch}
+        variant="primary"
+        as={Link}
+        to="/doctor-patient-data-page"
+      >
         Search
       </Button>
     </Form.Group>

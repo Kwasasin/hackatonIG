@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import SearchBarComponent from "./SearchBarComponent";
 import RefusedComponent from "./RefusedComponent";
+import { Link } from "react-router-dom";
 
 const DoctorDashboardPage = () => {
   const [searchedPESEL, setSearchedPESEL] = useState("");
@@ -14,7 +15,7 @@ const DoctorDashboardPage = () => {
     <Container className="niceHeader">
       <h1 className="bigHeader">Doctor Dashboard</h1>
       <SearchBarComponent onSearch={handleSearch} />
-      <RefusedComponent PESEL={searchedPESEL} />
+      {/* <RefusedComponent PESEL={searchedPESEL} /> */}
     </Container>
   );
 };

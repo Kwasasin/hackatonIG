@@ -26,7 +26,7 @@ const MedicalLoginForm = () => {
     <Container>
       <Row className="d-flex justify-content-center">
         <Col md="7" className="mt-0">
-          <h2 className="text-center">SuperSecure Data</h2>
+          <h2 className="text-center">Secured Health</h2>
           <Button
             onClick={() => setUserType("patient")}
             className={`mr-2 ${userType === "patient" ? "active" : ""}`}
